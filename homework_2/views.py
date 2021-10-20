@@ -7,9 +7,9 @@ def add_vacancies(some_dict):
     vacancy_collection = db.vacancy_collection
     vacancy_collection.insert_many(some_dict)
 
-def search_vacancies():
+def db_search_vacancies():
     client = MongoClient('localhost', 27017)
     db = client['vacancy_db']
     collection = db.vacancy_collection
-    result = collection.find({salary: /\d/})
+    result = collection.find({'salary': /\d/})
     return result
