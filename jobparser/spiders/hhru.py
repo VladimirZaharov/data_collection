@@ -8,10 +8,10 @@ from jobparser.items import JobparserItem
 class HhruSpider(scrapy.Spider):
     name = 'hhru'
     allowed_domains = ['hh.ru']
-    start_urls = ['https://izhevsk.hh.ru/search/vacancy?area=&st=searchVacancy&text=python']
+    start_urls = ['https://tula.hh.ru/search/vacancy?area=&st=searchVacancy&text=python']
 
     def parse(self, response: HtmlResponse):
-        next_page = 'https://izhevsk.hh.ru' \
+        next_page = 'https://tula.hh.ru' \
                     + response.css('a[class="bloko-button"][data-qa="pager-next"]').attrib['href']
         print(next_page)
         response.follow(next_page, callback=self.parse)
@@ -26,11 +26,17 @@ class HhruSpider(scrapy.Spider):
             yield scrapy.Request(response.urljoin(next_page), callback=self.parse)
 
     def vacansy_parse(self, response: HtmlResponse):
-        name = response.css('h1[data-qa="vacancy-title"]::text').getall()
-        salary = ''.join(response.css('span[data-qa="bloko-header-2"]'
-                                      '[class="bloko-header-2 bloko-header-2_lite"]::text').getall())
+        vacancy_name = response.css('h1[data-qa="vacancy-title"]::text').getall()
+        salary_from = response.xpath('//*[@id="HH-React-Root"]/div/div/div/div/div[1]/div[1]/div/div/div[2]/span[1]/text()[2]').get()
+        salary_to = response.xpath('//*[@id="HH-React-Root"]/div/div/div/div/div[1]/div[1]/div/div/div[2]/span[1]/text()[4]').get()
+        vacancy_link = response.xpath('/html/head/link[9]').get()
+        vacancy_site = 'HH.ru'
+        print('\nНазвание вакансии: ', vacancy_name)
+        print('Зарплата от: ', salary_from)
+        print('Зарплата до: ', salary_to)
+        print('Ссылка на вакансию: ', vacancy_link)
+        print('Взято с сайта: ', vacancy_site)
 
-        print('\nНазвание вакансии: ', name[0])
-        print('Зарплата: ', salary)
 
-        yield JobparserItem(name=name, salary=salary)
+
+        yield JobparserItem(vacancy_name=vacancy_name, salary_from=salary_from, salary_to=salary_to, vacancy_link=vacancy_link, vacancy_site=vacancy_site)
