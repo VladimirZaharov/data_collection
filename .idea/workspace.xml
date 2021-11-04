@@ -4,25 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d381ff57-ce66-4611-bc46-c36103e2b7d0" name="Changes" comment="added Youla spider">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobparser/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobparser/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobparser/middlewares.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobparser/pipeline.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobparser/runner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobparser/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobparser/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobparser/spiders/hhru.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jobparser/spiders/superjob.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrapy.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/youlaparser/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1_yahoo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/youlaparser/items.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/youlaparser/pipelines.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/youlaparser/runner.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/youlaparser/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/youlaparser/spiders/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/youlaparser/spiders/youla.py" beforeDir="false" />
+    <list default="true" id="d381ff57-ce66-4611-bc46-c36103e2b7d0" name="Changes" comment="task1 done">
+      <change afterPath="$PROJECT_DIR$/task2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1_yahoo.py" beforeDir="false" afterPath="$PROJECT_DIR$/task1_yahoo.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +59,7 @@
       <recent name="C:\python_courses\data_collection\homework_dir\my_homework\youlaparser" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.task1_yahoo">
+  <component name="RunManager" selected="Python.task2">
     <configuration name="task1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -119,8 +104,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="task2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="my_homework" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/task2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.task2" />
         <item itemvalue="Python.task1_yahoo" />
         <item itemvalue="Python.task1" />
       </list>
@@ -151,7 +159,7 @@
       <workItem from="1635943386566" duration="885000" />
       <workItem from="1635944316000" duration="200000" />
       <workItem from="1635944530068" duration="15763000" />
-      <workItem from="1636011085133" duration="6263000" />
+      <workItem from="1636011085133" duration="15637000" />
     </task>
     <task id="LOCAL-00001" summary="done">
       <created>1635419650848</created>
@@ -195,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635886333546</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="task1 done">
+      <created>1636026468475</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1636026468476</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -219,10 +234,12 @@
     <MESSAGE value="task 1" />
     <MESSAGE value="added superjob spider" />
     <MESSAGE value="added Youla spider" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Youla spider" />
+    <MESSAGE value="task1 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="task1 done" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/my_homework$task1.coverage" NAME="task1 Coverage Results" MODIFIED="1635977212160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/my_homework$task1_yahoo.coverage" NAME="task1_yahoo Coverage Results" MODIFIED="1636026206589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_homework$task2.coverage" NAME="task2 Coverage Results" MODIFIED="1636050484439" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/my_homework$task1_yahoo.coverage" NAME="task1_yahoo Coverage Results" MODIFIED="1636031824259" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
